@@ -18,7 +18,7 @@ function App() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("https://cart-backend-ivov.onrender.com/products");
+      const res = await axios.get("https://cart-backend-brown.vercel.app/products");
       setProducts(res.data);
     } catch (err) {
       console.error("Fetch products error:", err);
@@ -27,7 +27,7 @@ function App() {
 
   const addToCart = async (productId) => {
     try {
-      await axios.post("https://cart-backend-ivov.onrender.com/cart/add", {
+      await axios.post("https://cart-backend-brown.vercel.app/cart/add", {
         userId,
         productId,
         quantity: 1,
@@ -40,7 +40,7 @@ function App() {
 
   const fetchCartTotal = async () => {
     try {
-      const res = await axios.get("https://cart-backend-ivov.onrender.com/cart/total", {
+      const res = await axios.get("https://cart-backend-brown.vercel.app/cart/total", {
         headers: { userId },
       });
       setCart(res.data);
