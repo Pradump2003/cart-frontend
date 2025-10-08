@@ -23,9 +23,9 @@ const Cart = ({ cart }) => {
         ))}
       </ul>
       */}
-      <p>Subtotal: ${cart.subtotal}</p>
-      <p>Tax (10%): ${cart.tax}</p>
-      <p>Total: ${cart.total}</p>
+      <p>Subtotal: ₹{cart.subtotal}</p>
+      <p>Tax (10%): ₹{cart.tax}</p>
+      <p>Total: ₹{cart.total}</p>
     </div>
   );
 };
